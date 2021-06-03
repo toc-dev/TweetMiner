@@ -39,10 +39,10 @@ def search_hashtags(consumer_key, consumer_secret, access_token, access_token_se
             hashtagfile.writerow([tweet.id,tweet.created_at, tweet.full_text.replace('\n',' ').encode('utf-8'), tweet.user.screen_name.encode('utf-8'), tweet.retweet_count, tweet.favorite_count, [e['text'] for e in tweet._json['entities']['hashtags']], tweet.user.followers_count])
 
 
-consumer_key = '5RfCDrvii20uXieCyFSPwdEwi' #input('Consumer Key: ')
-consumer_secret = 'yevjJXG5v6omCPmmTw1C0u3OYpKHT2COXT2GBiUHf3seYRAhKW' #input('Consumer Secret: ')
-access_token = '790220237333467136-vtmtbQyql44iR6J9SHYeOZnOT8ceCEq' #input('Access Token: ')
-access_token_secret = 'G537qPPvhMysfSwEFE9BqkOq37MzCaiLh5qPMqvffCB6s' #input('Acess Token Secret: ')
+consumer_key = '############' #input('Consumer Key: ')
+consumer_secret = '##################' #input('Consumer Secret: ')
+access_token = '##############' #input('Access Token: ')
+access_token_secret = '##############' #input('Acess Token Secret: ')
 
 hashtag_phrase = input('Hashtag Phrase: ')
 
